@@ -1,0 +1,10 @@
+.register {
+   color: #1890ff;
+   cursor: pointer;
+}
+.input {
+   text-align: left;
+}
+.btn {
+   margin: 10px;
+}

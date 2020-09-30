@@ -1,0 +1,10 @@
+.com {
+    height: calc(100vh - 80px - 40px);
+}
+.card {
+    width:800px;
+    height: 300px;
+}
+.edit {
+    margin-right: 10px;
+}

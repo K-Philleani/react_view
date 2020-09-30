@@ -2,6 +2,8 @@ import React, {Fragment} from "react";
 import styled from './Login.module.css'
 import { Form, Input, Button, message } from 'antd'
 import axios from '../../axios'
+import { useHistory } from "react-router-dom";
+
 
 const layout = {
   labelCol: { span: 6 },
@@ -10,6 +12,7 @@ const layout = {
 
 const Login = (props) => {
   const [ form ] = Form.useForm()
+  const history = useHistory()
   const submit = values => {
     let { username, password } = values
     axios({
@@ -30,10 +33,7 @@ const Login = (props) => {
         return
       }
       if (res.code === 1) {
-        message.success(res.message)
-        props.history.push({
-          pathname: '/first'
-        })
+        history.push('/admin')
       }
     })
   }

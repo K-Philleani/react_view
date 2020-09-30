@@ -1,0 +1,11 @@
+.container {
+}
+.content {
+    display: flex;
+}
+
+.info {
+    margin: 16px;
+    flex: 1;
+    height: calc(100vh - 80px - 40px - 20px);
+}

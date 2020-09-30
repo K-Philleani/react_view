@@ -1,7 +1,9 @@
 import React from "react";
 import { Redirect } from 'react-router-dom'
 import Home from '../layout/Home'
-import First from '../layout/First/index.jsx'
+import Admin from '../layout/Admin/Home'
+import User from '../layout/AdminComs/User'
+import Data from '../layout/AdminComs/Data'
 
 export default [
   {
@@ -16,9 +18,18 @@ export default [
     )
   },
   {
-    path: "/first",
-    exact: true,
-    component: First
+    path: "/admin",
+    component: Admin,
+    routes: [
+      {
+        path: '/admin/user',
+        component: User,
+      },
+      {
+        path: '/admin/data',
+        component: Data
+      }
+    ]
   }
 
 

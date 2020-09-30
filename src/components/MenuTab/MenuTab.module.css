@@ -1,0 +1,6 @@
+.menu {
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-color: #E5EDF0;
+    color: #6494A6;
+}

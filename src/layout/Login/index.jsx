@@ -33,7 +33,7 @@ const Login = (props) => {
         return
       }
       if (res.code === 1) {
-        history.push('/admin')
+        history.push('/admin/user')
       }
     })
   }

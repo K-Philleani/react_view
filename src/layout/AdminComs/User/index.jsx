@@ -107,39 +107,38 @@ const User = () => {
 
   return (
       <div className={styled.com}>
-        {/*<Card className={styled.card}>*/}
-        {/*  <Table*/}
-        {/*      title={()=> (<h3>用户账号信息表</h3>)}*/}
-        {/*      bordered*/}
-        {/*      dataSource={data}*/}
-        {/*      columns={columns}*/}
-        {/*      rowKey={record => record.id}*/}
-        {/*  >*/}
-        {/*  </Table>*/}
-        {/*  <Modal*/}
-        {/*      title="详情"*/}
-        {/*      visible={visible}*/}
-        {/*      onCancel={closeModel}*/}
-        {/*      onOk={form.submit}*/}
-        {/*  >*/}
-        {/*    <Form*/}
-        {/*        {...layout}*/}
-        {/*        form={form}*/}
-        {/*        onFinish={onFinish}*/}
-        {/*        initialValues={initVal}*/}
-        {/*    >*/}
-        {/*      <Form.Item label="用户账号" name="user_account">*/}
-        {/*        <span>{initVal.user_account}</span>*/}
-        {/*      </Form.Item>*/}
-        {/*      <Form.Item label="用户手机号" name="user_phone">*/}
-        {/*        <Input></Input>*/}
-        {/*      </Form.Item>*/}
-        {/*      <Form.Item label="用户密码" name="user_pwd">*/}
-        {/*        <Input></Input>*/}
-        {/*      </Form.Item>*/}
-        {/*    </Form>*/}
-        {/*  </Modal>*/}
-        {/*</Card>*/}
+          <Card className={styled.card}>
+            <Table
+              bordered
+              title={()=> (<h3>用户账号信息表</h3>)}
+              dataSource={data}
+              columns={columns}
+              rowKey={record => record.id}
+            />
+          </Card>
+          <Modal
+              title="详情"
+              visible={visible}
+              onCancel={closeModel}
+              onOk={form.submit}
+          >
+            <Form
+                {...layout}
+                form={form}
+                onFinish={onFinish}
+                initialValues={initVal}
+            >
+              <Form.Item label="用户账号" name="user_account">
+                <span>{initVal.user_account}</span>
+              </Form.Item>
+              <Form.Item label="用户手机号" name="user_phone">
+                <Input></Input>
+              </Form.Item>
+              <Form.Item label="用户密码" name="user_pwd">
+                <Input></Input>
+              </Form.Item>
+            </Form>
+          </Modal>
       </div>
   )
 }

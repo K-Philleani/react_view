@@ -12,6 +12,7 @@
     "http-proxy-middleware": "^1.0.5",
     "node-ssh": "10.0.2",
     "qs": "^6.9.4",
+    "querystring": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",

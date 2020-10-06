@@ -4,7 +4,6 @@ import { Form, Input, Button, message } from 'antd'
 import axios from '../../axios'
 import { useHistory } from "react-router-dom";
 
-
 const layout = {
   labelCol: { span: 6 },
   wrapperCol: { span: 14 }

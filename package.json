@@ -10,6 +10,7 @@
     "axios": "^0.20.0",
     "dotenv-cli": "^4.0.0",
     "http-proxy-middleware": "^1.0.5",
+    "js-cookie": "^2.2.1",
     "node-ssh": "10.0.2",
     "qs": "^6.9.4",
     "querystring": "^0.2.0",
